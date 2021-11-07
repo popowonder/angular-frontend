@@ -1,0 +1,45 @@
+.menu {
+  width: 350px;
+  height: 400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+  /* if screen is in fullscreen mode */
+  @media(min-width: 800px){
+    #menu-image{
+      margin-left:5em;
+    }
+
+    #right-div{
+      margin-right: 5em;
+    }
+  }
